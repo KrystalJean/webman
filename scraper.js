@@ -13,7 +13,8 @@ async function run() {
         'https://www.devmytech.com',
         'https://www.shopchillvibes.com',
         'https://www.riverbendliquorandwine.com',
-        'https://krystaljean.github.io/henry-game/'
+        'https://krystaljean.github.io/henry-game/',
+        'https://www.cozyhomeremedy.com'
     ];
 
     for(var i = 0; i < urlArray.length; i++) {
