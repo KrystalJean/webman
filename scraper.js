@@ -1,10 +1,7 @@
 const puppeteer = require('puppeteer');
 
 async function run() {
-    // const title = await desktopPage.evaluate(() => document.title);
-    // console.log(title)
-
-
+    
     const browser = await puppeteer.launch();
     const desktopPage = await browser.newPage();
     const mobilePage = desktopPage;
@@ -13,7 +10,6 @@ async function run() {
         'https://www.devmytech.com',
         'https://www.shopchillvibes.com',
         'https://www.riverbendliquorandwine.com',
-        'https://krystaljean.github.io/henry-game/',
         'https://www.cozyhomeremedy.com'
     ];
 
@@ -32,7 +28,7 @@ async function run() {
         });
 
         // Open URL as mobile page
-        await mobilePage.setViewport({ width: 640, height: 460 });
+        await mobilePage.setViewport({ width: 320, height: 480 });
         await mobilePage.goto(website_url, { waitUntil: 'networkidle0' });
 
         // Capture mobile thumbnail screenshot
@@ -43,8 +39,6 @@ async function run() {
     
     }
 
-    
-    
 
     await browser.close();
 }
