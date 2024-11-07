@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node scraper"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
